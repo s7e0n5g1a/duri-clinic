@@ -1,43 +1,63 @@
 <template>
-    <div>
-      <v-app-bar
-        color="deep-purple accent-4"
-        dark
-      >
-        <v-app-bar-nav-icon></v-app-bar-nav-icon>
-
-        <v-toolbar-title>Page title</v-toolbar-title>
+      <v-app-bar height="90px" hide-on-scroll>
+        <v-img
+          id="logo"
+          src="@/assets/logo1.png"
+          max-width="100px"
+        ></v-img>
+        <v-img
+          src="@/assets/logo2.png"
+          max-width="160px"
+        ></v-img>
 
         <v-spacer></v-spacer>
+        <v-spacer></v-spacer>
+        <v-spacer></v-spacer>
 
-        <v-btn icon>
-          <v-icon>mdi-heart</v-icon>
-        </v-btn>
 
-        <v-btn icon>
-          <v-icon>mdi-magnify</v-icon>
-        </v-btn>
 
-        <v-menu
-          left
-          bottom
-        >
-          <template v-slot:activator="{ on }">
-            <v-btn icon v-on="on">
-              <v-icon>mdi-dots-vertical</v-icon>
-            </v-btn>
-          </template>
+        <v-row>
+            <router-link
+              to="/about-us"
+              tag="v-btn">
+              <div class="menus">ABOUT US</div>
+            </router-link>
 
-          <v-list>
-            <v-list-item
-              v-for="n in 5"
-              :key="n"
-              @click="() => {}"
-            >
-              <v-list-item-title>Option {{ n }}</v-list-item-title>
-            </v-list-item>
-          </v-list>
-        </v-menu>
+          <v-spacer></v-spacer>
+            <router-link
+              to="/services"
+              tag="v-btn">
+              <div class="menus">SERVICES</div>
+            </router-link>
+
+          <v-spacer></v-spacer>
+
+          <router-link
+              to="/specialists"
+              tag="v-btn">
+              <div class="menus">OUR SPECIALISTS</div>
+            </router-link>
+          <v-spacer></v-spacer>
+
+          <router-link
+              to="/contact"
+              tag="v-btn">
+              <div class="menus">CONTACT</div>
+             </router-link>
+          <v-spacer></v-spacer>
+
+
+        </v-row>
+
+
+
       </v-app-bar>
-    </div>
 </template>
+<style>
+  .menus {
+    font-size: 1.2vw;
+    font-weight: 600;
+    font-family: "Arial", Times;
+    color: #235c5b;
+  }
+</style>
