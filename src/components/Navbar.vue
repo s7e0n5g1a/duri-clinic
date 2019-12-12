@@ -1,14 +1,24 @@
 <template>
-      <v-app-bar height="90px" hide-on-scroll>
-        <v-img
-          id="logo"
-          src="@/assets/logo1.png"
-          max-width="100px"
-        ></v-img>
-        <v-img
-          src="@/assets/logo2.png"
-          max-width="160px"
-        ></v-img>
+      <v-app-bar height="90px" hide-on-scroll id="bar">
+        <router-link
+          to="/"
+          tag="v-btn">
+          <v-img
+            id="logo"
+            src="@/assets/logo1.png"
+            max-width="100px"
+          ></v-img>
+        </router-link>
+        <router-link
+          to="/"
+          tag="v-btn">
+          <v-img
+            src="@/assets/logo2.png"
+            max-width="160px"
+          ></v-img>
+        </router-link>
+
+
 
         <v-spacer></v-spacer>
         <v-spacer></v-spacer>
@@ -59,5 +69,8 @@
     font-weight: 600;
     font-family: "Arial", Times;
     color: #235c5b;
+  }
+  #bar {
+    box-shadow: inset  0px 0px 16px 0px rgba(0,0,0,0.6);
   }
 </style>
