@@ -23,9 +23,9 @@
           color="primary"
           elevation="24"
           :style="{left: '50%', transform:'translateX(-50%)', top: '40%'}"
-          to="/add-journey"
+          to="/about-us"
         >
-          Zaplanuj podróż
+          BOOK AN APPOINTMENT
         </v-btn>
       </v-carousel-item>
     </v-carousel>
@@ -43,9 +43,9 @@
           {
             src: require('@/assets/dentist.jpg'),
           },
-          {
-            src: require('@/assets/dentist2.jpg'),
-          },
+          // {
+          //   src: require('@/assets/dentist2.jpg'),
+          // },
           {
             src: require('@/assets/dentist3.jpg'),
           },
@@ -53,6 +53,20 @@
             src: require('@/assets/dentist4.jpg'),
           }
         ],
+        //usmiech
+        //<a href="https://pl.freepik.com/darmowe-zdjecie-wektory/usmiech">Uśmiech zdjęcie utworzone przez Racool_studio - pl.freepik.com</a>
+
+        //dziewczynka
+        //<a href="https://pl.freepik.com/darmowe-zdjecie-wektory/osoby">Osoby zdjęcie utworzone przez prostooleh - pl.freepik.com</a>
+
+        //pisze cos na kartce
+        //<a href="https://pl.freepik.com/darmowe-zdjecie-wektory/osoby">Osoby zdjęcie utworzone przez jcomp - pl.freepik.com</a>
+
+        //kobieta tryzma kartke
+        //<a href="https://pl.freepik.com/darmowe-zdjecie-wektory/tlo">Tło zdjęcie utworzone przez freepik - pl.freepik.com</a>
+
+        //miasto
+        //<a href="https://pl.freepik.com/darmowe-zdjecie-wektory/tlo">Tło plik wektorowy utworzone przez rawpixel.com - pl.freepik.com</a>
         mini: true,
       }
     },

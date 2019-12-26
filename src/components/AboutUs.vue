@@ -1,16 +1,5 @@
 <template>
 <div>  Dupa o nas i my o dupie
-  <br/>
-  asdasdasdas
-  <br/>
-  asdasdasdas
-  <br/>
-  asdasdasdas
-  <br/>
-  asdasdasdas
-  <br/>
-  asdasdasdas
-  <br/>
-  asdasdasdas
+<h1>KC AGATKA <3</h1>
 
 </div></template>

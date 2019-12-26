@@ -1,5 +1,5 @@
 <template>
-      <v-app-bar height="90px" hide-on-scroll id="bar">
+      <v-app-bar height="70px" hide-on-scroll id="bar">
         <router-link
           to="/"
           tag="v-btn">
@@ -69,8 +69,13 @@
     font-weight: 600;
     font-family: "Arial", Times;
     color: #235c5b;
+    cursor: pointer;
   }
   #bar {
-    box-shadow: inset  0px 0px 16px 0px rgba(0,0,0,0.6);
-  }
+       /*box-shadow: inset  0px 0px 10px 0px rgba(0,0,0,0.6);*/
+    box-shadow: inset 0 -7px 9px -7px rgba(0,0,0,0.7);
+    box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.7);
+    z-index: 2000;
+     }
+
 </style>
